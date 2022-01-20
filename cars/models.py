@@ -120,3 +120,6 @@ class Car(models.Model):
 
     def __str__(self):
         return self.car_title
+
+    class Meta:
+        ordering = ('-created_date', )
